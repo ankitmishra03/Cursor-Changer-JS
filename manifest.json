@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "chrome-extension",
+  "permissions": ["activeTab", "tabs", "storage"],
+  "content-scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "pic1.png",
+    "default_popup": "index.html",
+    "default_title": "A pop-up"
+  }
+}
